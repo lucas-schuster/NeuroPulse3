@@ -18,6 +18,10 @@
   },
   "devDependencies": {
     "prisma": "^5.0.0"
+  },
+  "scripts": {
+    "build": "npx prisma generate && npx prisma migrate deploy",
+    "start": "node src/server.js"
   }
 }
 
